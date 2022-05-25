@@ -106,8 +106,9 @@ type     | size
 Anderes Hilfreiches:
 --------------------
 
-`/\` : AND  
-`\/` : OR
+∧ : AND  
+∨ : OR
+¬ : NOT
 
 b   |x|d |o 
 ----|-|--|--
