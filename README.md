@@ -107,7 +107,7 @@ Anderes Hilfreiches:
 --------------------
 
 ∧ : AND  
-∨ : OR
+∨ : OR  
 ¬ : NOT
 
 b   |x|d |o 
