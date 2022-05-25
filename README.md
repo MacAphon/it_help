@@ -58,6 +58,10 @@ C:
 #define u32 unsigned long int
 #define i32 long int
 
+// vvvv Function Prototypes, required for Cx51
+void init();
+void int0();
+
 void main() {
     init();
     // ...
