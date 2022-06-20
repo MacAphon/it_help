@@ -12,7 +12,6 @@ timer1:   | 001Bh     | 3
 serial:   | 0023h     | 4
 timer2:   | 002Bh     | 5
 
--------------------------------------------------------------------------------
 Assembler:
 ----------
 ```
@@ -44,9 +43,9 @@ Konstanten:
 `#1d` entspr. `0d1`
 Kommentare: `; Kommentar`
 
--------------------------------------------------------------------------------
 C:
 ---
+vollständige Dokumentation [hier](https://www.keil.com/support/man/docs/c51/c51_intro.htm).
 ```
 #include<AT898252.h>
 
@@ -71,7 +70,7 @@ void main() {
 void init() {
     IT0 = 1; // falling edge triggered
              // state triggered: 0
-    EX0 = 1; // Enable EXT1
+    EX0 = 1; // Enable EXT0
     EA  = 1; // Enable Interrupts
 }
 
@@ -88,25 +87,41 @@ Kommentare:
   Kommentar
  */
 ```
+Arrays:
+```
+int x[5];
+int y[3] = {3, 4, 5}
+int z[] = {3, 4, 5};  // Größe implizit
+char r[13] = "Hello, World!"  // char-arrays als Strings
+```
 
 ### memory types:
 type    | ort
---------|-------------------------------------
-`data`  | direkt adressierbarer interner RAM
-`pdata` | bitwise adressierbarer interner RAM
-`idata` | indirekt adressierbarer interner RAM
+--------|--------------------------------------------
+`data`  | direkt adressierbarer interner unterer RAM
+`bdata` | bitwise adressierbarer interner unterer RAM
+`idata` | indirekt adressierbarer interner oberer RAM
 `pdata` | 'paged' externer Datenspeicher
 `xdata` | externer Datenspeicher
 `code`  | Programmspeicher
 
-### data types:
+### standard c data types:
+type                | description
+--------------------|------------------------------------------------------------
+`unsigned char`     | 8-bit unsigned integer
+`char`              | 8-bit signed integer, zusätzlich ASCII character
+`unsigned int`      | 16-bit unsigned integer, equivalent zu `unsigned short int`
+`int`               | 16-bit signed integer, equivalent zu `short int`
+`unsigned long int` | 32-bit unsigned integer
+`long int`          | 32-bit signed integer
+
+### special data types:
 type     | size
----------|------
+---------|-------
 `sbit`   | 1 Bit
 `sfr`    | 1 Byte
 `sfr 16` | 2 Byte
 
--------------------------------------------------------------------------------
 Anderes Hilfreiches:
 --------------------
 
