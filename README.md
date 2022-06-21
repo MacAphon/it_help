@@ -45,11 +45,11 @@ Kommentare: `; Kommentar`
 
 C:
 ---
-vollständige Dokumentation [hier](https://www.keil.com/support/man/docs/c51/c51_intro.htm).
+vollständige Dokumentation für Cx51 [hier](https://www.keil.com/support/man/docs/c51/c51_intro.htm).
 ```
 #include<AT898252.h>
 
-// data type aliases for convenience
+// data type aliases for convenience, can be ignored
 #define u8  unsigned char
 #define i8  char
 #define u16 unsigned int
@@ -105,6 +105,11 @@ type    | ort
 `xdata` | externer Datenspeicher
 `code`  | Programmspeicher
 
+Nutzung:
+```
+unsigned int data x = 3;
+char idata y = "a";
+```
 ### standard c data types:
 type                | description
 --------------------|------------------------------------------------------------
