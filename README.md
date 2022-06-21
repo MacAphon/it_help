@@ -119,6 +119,7 @@ type                | description
 `int`               | 16-bit signed integer, equivalent zu `short int`
 `unsigned long int` | 32-bit unsigned integer
 `long int`          | 32-bit signed integer
+`float`             | 32-bit floating-point, equivalent zu `double`
 
 ### special data types:
 type     | size
